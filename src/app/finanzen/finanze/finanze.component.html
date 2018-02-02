@@ -12,10 +12,10 @@
           </tr>
       </thead>
         <tbody>
-          <tr *ngFor="let v of account" (click)="showVoucher(v.ID)">
-            <td>{{v.Id}}</td>
-            <td>{{v.url}}</td>
-            <td>{{v.title}}</td>
+          <tr *ngFor="let a of account" (click)="showVoucher(v.ID)">
+            <td>{{a.ID}}</td>
+            <td>{{a.url}</td>
+            <td>{{a.title}}</td>
             <td>{{v.Amount | currency:'EUR':true}} </td>
             <td><a (click)="deleteVoucher(v)">Delete</a></td>
             <td><a [routerLink]="[ '/vouchers', v.ID ]">Edit</a></td>

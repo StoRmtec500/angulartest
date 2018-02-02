@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FinanzeService } from './finanze.service';
+import { Account} from '../../shared/models/index';
 
 @Component({
   selector: 'app-finanze',
