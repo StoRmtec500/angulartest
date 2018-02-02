@@ -1,0 +1,17 @@
+<div id="demoContainer" class="">
+  <div class="row">
+      <div class="panel col-md-2">
+          <h4>{{title}}</h4>
+          <div>
+              <a [routerLink]="['finanze']" routerLinkActive="active">Test</a>
+          </div>
+      </div>
+
+      <div class="panel col-md-9 col-md-offset-1">
+          <h4></h4>
+          <div>
+             <router-outlet></router-outlet>
+           </div>
+      </div>
+  </div>
+</div>
